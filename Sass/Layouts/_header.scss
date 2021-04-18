@@ -1,0 +1,55 @@
+header{
+    @include styleText($color-black-light,$fs-1,$fw-normal);
+}
+
+.header__left{
+    display: flex;
+    align-items: center;
+    .navbar-brand{
+        img{
+            width: 110px;
+        }
+    }
+    .header__cate{
+        //flex-grow :0;
+    }
+    .header__form{
+        flex-grow: 1;
+    }
+}
+.header__right{
+    .nav-link{
+        @include styleText($color-black-light,$fs-1,$fw-normal);
+        color: $color-black-0;
+    }
+    .ude-btnGroup{
+        white-space: nowrap;
+    }
+}
+
+//responsive 
+header{
+    //1200px
+    @include responsive("extra-large"){
+        .header__right{
+            .business, .teach{
+                display: none;
+            }
+        }
+    }
+    //768px
+    @include responsive ("medium"){
+        .header__left{
+            justify-content: center;
+            .header__cate, .header__form{
+                display: none;
+            }
+            
+        }
+        .header__right{
+            .ude-btnGroup{
+                display: none;
+            }
+        }
+    }
+}

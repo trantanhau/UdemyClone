@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 33%;
+  left: -3%;
+  padding: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50% !important;
+  background-color: #fff !important;
+  box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.1);
+  z-index: 3;
+}
+
+.owl-prev span, .owl-next span {
+  color: #007791;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 0.6;
+}
+
+.owl-prev:focus, .owl-next:focus {
+  outline: none;
+}
+
+.owl-next {
+  left: unset;
+  right: -3%;
+}
+
+.ude-btnRed {
+  background-color: #ec5252;
+  border: 1px solid #ec5252;
+  border-radius: 2px;
+  padding: 11px 12px;
+  color: #f2f3f5;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.ude-btnRed:hover {
+  background-color: #992337;
+  border: #992337;
+  color: #fff;
+}
+
+.ude-btnWhite {
+  background-color: #fff;
+  border: 1px solid #29303b;
+  border-radius: 2px;
+  padding: 11px 12px;
+  color: #505763;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+header {
+  color: #505763;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__left .navbar-brand img {
+  width: 110px;
+}
+
+.header__left .header__form {
+  flex-grow: 1;
+}
+
+.header__right .nav-link {
+  color: #505763;
+  font-size: 13px;
+  font-weight: normal;
+  color: #29303b;
+}
+
+.header__right .ude-btnGroup {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1200px) {
+  header .header__right .business, header .header__right .teach {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .header__left {
+    justify-content: center;
+  }
+  header .header__left .header__cate, header .header__left .header__form {
+    display: none;
+  }
+  header .header__right .ude-btnGroup {
+    display: none;
+  }
+}
+
+.udeCarousel {
+  background-image: url(../../img/cover.jpg);
+  height: 400px;
+  background-size: cover;
+  position: relative;
+}
+
+.udeCarousel .carousel__content {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 30%;
+}
+
+.udeCarousel .carousel__content h1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.udeCarousel .carousel__content p {
+  color: #fff;
+  font-size: 20px -2;
+  font-weight: normal;
+}
+
+.udeCarousel .input .form-control {
+  padding: 20px;
+  border: none;
+  border-radius: 0;
+}
+
+.udeCarousel .input .form-control::placeholder {
+  color: #a1a7b3;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.udeCarousel .input .form-control:focus {
+  box-shadow: none;
+}
+
+.udeCarousel .input .input-group-prepend .input-group-text {
+  background-color: #fff;
+  color: #ec5252;
+  border: none;
+}
+
+.udeCarousel .input .input-group-prepend:hover .input-group-text {
+  background-color: #ec5252;
+  color: #fff;
+}
+
+.intro {
+  background: linear-gradient(to right, #521822, #ec5252);
+}
+
+.intro .intro__content {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+.intro .intro__content .intro__item .icon {
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+.intro .intro__content .intro__item .icon__content {
+  padding-top: 10px;
+}
+
+.intro .intro__content .intro__item .icon__content p:first-child {
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.intro .intro__content .intro__item .icon__content p:last-child {
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.course {
+  margin-top: 25px;
+}
+
+.course .course__content {
+  width: 80%;
+  margin: auto;
+}
+
+.course .course__content .course__intro {
+  padding-top: 20px;
+}
+
+.course .course__content .course__intro h2 {
+  color: #29303b;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.course .course__content .myTabs .nav {
+  justify-content: space-between;
+  border: none;
+}
+
+.course .course__content .myTabs .nav .nav-item:hover .nav-link {
+  border: none;
+}
+
+.course .course__content .myTabs .nav .nav-item .nav-link.active {
+  border: none;
+  border-bottom: 5px solid #007791;
+}
+
+.course .course__content .myTabs .nav .nav-item .nav-link {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+}
+
+.course .course__content .myTabs .tab-content {
+  margin-top: 25px;
+  position: relative;
+}
+
+.course .course__content .myTabs .tab-content .card-title {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.course .course__content .myTabs .tab-content .card-text {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.course .course__content .myTabs .tab-content .rating {
+  display: flex;
+}
+
+.course .course__content .myTabs .tab-content .rating .rating__star {
+  color: #F4C150;
+  font-size: 13px;
+  font-weight: normal;
+  margin-right: 2px;
+}
+
+.course .course__content .myTabs .tab-content .rating span:nth-child(2) {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 2px;
+}
+
+.course .course__content .myTabs .tab-content .rating span:last-child {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.course .course__content .myTabs .tab-content .price {
+  text-align: right;
+}
+
+.course .course__content .myTabs .tab-content .price .oldPrice {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
+.course .course__content .myTabs .tab-content .price .newPrice {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.student {
+  margin-top: 25px;
+}
+
+.student .student__content {
+  width: 80%;
+  margin: auto;
+}
+
+.student .student__content .card-title {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.student .student__content .card-text {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.student .student__content .rating {
+  display: flex;
+}
+
+.student .student__content .rating .rating__star {
+  color: #F4C150;
+  font-size: 13px;
+  font-weight: normal;
+  margin-right: 2px;
+}
+
+.student .student__content .rating span:nth-child(2) {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 2px;
+}
+
+.student .student__content .rating span:last-child {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.student .student__content .price {
+  text-align: right;
+}
+
+.student .student__content .price .oldPrice {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
+.student .student__content .price .newPrice {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,9 @@
+.ude-btnRed{
+    @include styleBtn($color-red-0,$color-red-0,$border-radius,$pd-1 + 1,$pd-1 + 2);
+    @include styleText($color-white-cream,$fs-1,$fw-bold);
+    @include styleHoverBtn($color-red-2,$color-red-2,$color-white-0) 
+}
+.ude-btnWhite{
+    @include styleBtn($color-white-0,$color-black-0,$border-radius,$pd-1 + 1,$pd-1 + 2);
+    @include styleText($color-black-light,$fs-1,$fw-bold);
+}

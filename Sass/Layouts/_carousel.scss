@@ -1,0 +1,44 @@
+.udeCarousel{
+    background-image: url(../../img/cover.jpg);
+    height: 400px;
+    background-size: cover;
+    position: relative;
+    .carousel__content{
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        width: 30%;
+        h1{
+            @include styleText($color-white-0, $fs-4, $fw-bold);
+        }
+        p{
+            @include styleText($color-white-0, $fs-2 -2, $fw-normal);
+        }
+    }
+    .input{
+        .form-control{
+            padding: $pd-2;
+            border: none;
+            border-radius: 0;
+            &::placeholder{
+                @include styleText($color-gray-2,$fs-2,$fw-normal);
+            }
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        .input-group-prepend{
+            .input-group-text{
+                background-color: $color-white-0;
+                color: $color-red-0;
+                border: none;
+            }
+            &:hover{
+                .input-group-text{
+                    background-color: $color-red-0;
+                    color: $color-white-0;
+                }
+            }
+        }
+    }
+}
